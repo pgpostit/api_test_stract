@@ -19,7 +19,6 @@ def register_routes(app: Flask):
 
     @app.route("/<platform>", methods=["GET"])
     def get_platform_data(platform):
-        data = insights_processor.process_insights()
-        platform_data = [row for row in data if row["Platform"] == platform]
+        data = insights_processor.process_insights(platform)
 
-        return generate_csv(platform_data, f"{platform}.csv")
+        return generate_csv(data, f"{platform}.csv")

@@ -7,11 +7,13 @@ class InsightsProcessor:
     def __init__(self, api_service: StractAPIService):
         self.api_service = api_service
 
-    def process_insights(self):
+    def process_insights(self, platform=None):
         insights_data = []
 
-        for platform in self.api_service.fetch_platforms()["platforms"]:
-            platform_id = platform["value"]
+        platforms = [platform] if platform else [x["value"] for x in self.api_service.fetch_platforms().get("platforms", [])]
+
+        for platform in platforms:
+            platform_id = platform
             accounts = self.api_service.fetch_accounts(platform_id)
             field_values = [f["value"]
                             for f in self.api_service.fetch_fields(platform_id)]
