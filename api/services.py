@@ -1,5 +1,6 @@
 import requests
 from typing import List, Dict, Any
+from flask import abort
 
 
 class StractAPIService:
@@ -14,7 +15,13 @@ class StractAPIService:
             params=params,
             headers=self.headers
         )
-        return response.json()
+        response_json = response.json()
+
+        if response.status_code != 200 or "error" in response_json:
+            error_message = response_json.get("error", "Unknown error")
+            abort(400, description=error_message)
+
+        return response_json
 
     def _paginate(self, endpoint: str, params: Dict[str, Any]) -> List[Dict[str, Any]]:
         data = []
