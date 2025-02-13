@@ -4,7 +4,32 @@ from flask import Response
 
 
 def normalize_data(data):
-    ...
+    FIELD_MAPPINGS = {
+        "adName": "ad_name",       # GA4 → Meta Ads/TikTok
+        "cost": "spend",           # GA4/TikTok → Meta Ads
+        "region": "country",       # GA4 → Meta Ads/TikTok
+        "cost_per_click": "cpc",   # TikTok → Meta Ads
+        "status": "effective_status"  # GA4 → Meta Ads
+    }
+
+    normalized_data = []
+
+    for entry in data:
+        normalized_entry = {}
+
+        for key, value in entry.items():
+            new_key = FIELD_MAPPINGS.get(key, key)
+            normalized_entry[new_key] = value
+
+        if "cpc" not in normalized_entry and "spend" in normalized_entry and "clicks" in normalized_entry:
+            normalized_entry["cpc"] = (
+                normalized_entry["spend"] / normalized_entry["clicks"]
+                if normalized_entry["clicks"] > 0 else 0
+            )
+
+        normalized_data.append(normalized_entry)
+
+    return normalized_data
 
 
 def summarize_data(data):
