@@ -1,0 +1,43 @@
+﻿ad_name;clicks;country;cpc;ctr;ctr_unique;effective_status;global_objective;id;impressions;spend;Platform;Account
+Anúncio 8;9444;US;0.708;0.416;0.282;ACTIVE;Lead;1;8626;8522.65;meta_ads;Branco
+Anúncio 10;8829;BR;0.368;0.708;0.715;PAUSED;Conversion;1;9503;19.7;meta_ads;Ricardo Rocha
+Anúncio 14;2245;BR;0.555;0.379;0.488;ACTIVE;Lead;2;2846;3451.21;meta_ads;Ricardo Rocha
+Anúncio 17;7764;US;0.856;0.743;0.491;ACTIVE;Conversion;1;124;4914.87;meta_ads;Ronaldão
+Anúncio 25;6437;BR;0.474;0.121;0.858;ACTIVE;Conversion;2;9228;3275.07;meta_ads;Ronaldão
+Anúncio 4;5818;BR;0.928;0.529;0.776;ACTIVE;Conversion;3;4428;6143.11;meta_ads;Ronaldão
+Anúncio 27;8606;BR;0.128;0.688;0.369;PAUSED;Conversion;4;6840;2904.18;meta_ads;Ronaldão
+Anúncio 9;886;BR;0.335;0.386;0.492;PAUSED;Conversion;1;2777;6915.93;meta_ads;Jorginho
+Anúncio 29;8490;BR;0.644;0.59;0.505;PAUSED;Lead;1;5499;9772.25;meta_ads;Mauro Silva
+Anúncio 11;8542;BR;0.355;0.804;0.348;PAUSED;Lead;2;8464;197.07;meta_ads;Mauro Silva
+Anúncio 1;5746;BR;0.311;0.81;0.605;PAUSED;Conversion;3;5568;4340.22;meta_ads;Mauro Silva
+Anúncio 11;3452;BR;0.468;0.071;0.973;PAUSED;Conversion;1;1899;9379.5;meta_ads;Bebeto
+Anúncio 3;8660;BR;0.899;0.996;0.959;PAUSED;Conversion;2;163;7199.81;meta_ads;Bebeto
+Anúncio 6;6466;BR;0.684;0.376;0.542;ACTIVE;Conversion;3;5084;1340.9;meta_ads;Bebeto
+Anúncio 20;6887;BR;0.659;0.009;0.336;ACTIVE;Lead;4;9412;3348.72;meta_ads;Bebeto
+Anúncio 1;5321;BR;0.721;0.904;0.939;ACTIVE;Lead;1;1255;4819.99;meta_ads;Dunga
+Anúncio 29;1127;US;0.92;0.224;0.422;ACTIVE;Lead;2;9150;5984.58;meta_ads;Dunga
+Anúncio 10;1972;BR;0.385;0.222;0.299;PAUSED;Lead;3;7672;3850.25;meta_ads;Dunga
+Anúncio 12;6190;BR;0.581;0.819;0.336;PAUSED;Conversion;4;524;2590.09;meta_ads;Dunga
+Anúncio 4;5273;BR;0.86;0.142;0.579;ACTIVE;Conversion;5;1776;8850.55;meta_ads;Dunga
+Anúncio 22;2504;BR;0.326;0.259;0.944;PAUSED;Lead;6;613;1961.54;meta_ads;Dunga
+Anúncio 18;9528;BR;0.958;0.498;0.036;PAUSED;Conversion;1;5189;8872.08;meta_ads;Zinhao
+Anúncio 9;2133;BR;0.567;0.746;0.368;PAUSED;Lead;2;1648;2890.54;meta_ads;Zinhao
+Anúncio 6;6990;BR;0.497;0.253;0.892;PAUSED;Conversion;3;3303;3033.63;meta_ads;Zinhao
+Anúncio 14;9157;US;0.414;0.921;0.46;ACTIVE;Lead;4;3729;5436.6;meta_ads;Zinhao
+Anúncio 18;8902;BR;0.043;0.039;0.002;PAUSED;Conversion;5;4794;7697.99;meta_ads;Zinhao
+Anúncio 15;8538;BR;0.134;0.339;0.692;PAUSED;Conversion;6;6159;5151.35;meta_ads;Zinhao
+Anúncio 28;964;BR;0.335;0.177;0.9;ACTIVE;Conversion;7;8285;6429.43;meta_ads;Zinhao
+Anúncio 12;7988;BR;0.144;0.829;0.39;ACTIVE;Lead;8;2292;5795.43;meta_ads;Zinhao
+Anúncio 9;2261;BR;0.023;0.761;0.081;ACTIVE;Lead;1;6042;360.17;meta_ads;Raí
+Anúncio 15;4234;US;0.057;0.614;0.168;PAUSED;Lead;2;690;1626.24;meta_ads;Raí
+Anúncio 10;2726;BR;0.578;0.529;0.946;PAUSED;Conversion;3;4994;4916.52;meta_ads;Raí
+Anúncio 8;7763;US;0.172;0.736;0.211;ACTIVE;Conversion;1;3926;540.26;meta_ads;Romário
+Anúncio 29;5123;BR;0.802;0.022;0.058;ACTIVE;Conversion;2;4067;3135.29;meta_ads;Romário
+Anúncio 14;6229;BR;0.784;0.537;0.198;PAUSED;Conversion;3;7373;4421.19;meta_ads;Romário
+Anúncio 1;6091;BR;0.862;0.17;0.996;ACTIVE;Conversion;4;8980;9956.73;meta_ads;Romário
+Anúncio 12;6505;BR;0.857;0.124;0.895;PAUSED;Conversion;5;846;1729.13;meta_ads;Romário
+Anúncio 24;4043;BR;0.276;0.178;0.788;ACTIVE;Conversion;1;3750;1087.08;meta_ads;Taffarel
+Anúncio 24;5060;US;0.012;0.226;0.586;ACTIVE;Conversion;2;9676;3368.39;meta_ads;Taffarel
+Anúncio 26;7467;BR;0.317;0.492;0.652;PAUSED;Conversion;3;6601;97.02;meta_ads;Taffarel
+Anúncio 27;9689;BR;0.729;0.031;0.117;ACTIVE;Conversion;4;8444;6619.4;meta_ads;Taffarel
+Anúncio 16;8927;US;0.353;0.586;0.965;ACTIVE;Conversion;5;4567;7856.97;meta_ads;Taffarel

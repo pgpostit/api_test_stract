@@ -1,7 +1,7 @@
 from flask import Flask, jsonify
 from api.services import StractAPIService
 from api.insights_processor import InsightsProcessor
-from api.utils import generate_csv
+from api.utils import generate_csv, summarize_data
 
 api_service = StractAPIService()
 insights_processor = InsightsProcessor(api_service)
@@ -22,3 +22,10 @@ def register_routes(app: Flask):
         data = insights_processor.process_insights(platform)
 
         return generate_csv(data, f"{platform}.csv")
+
+    @app.route("/<platform>/resumo", methods=["GET"])
+    def get_platform_summary(platform):
+        data = insights_processor.process_insights(platform)
+        summarized_data = summarize_data(data)
+
+        return generate_csv(summarized_data, f"{platform}_summary.csv")

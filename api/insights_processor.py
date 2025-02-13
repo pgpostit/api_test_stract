@@ -10,7 +10,8 @@ class InsightsProcessor:
     def process_insights(self, platform=None):
         insights_data = []
 
-        platforms = [platform] if platform else [x["value"] for x in self.api_service.fetch_platforms().get("platforms", [])]
+        platforms = [platform] if platform else [x["value"]
+                                                 for x in self.api_service.fetch_platforms().get("platforms", [])]
 
         for platform in platforms:
             platform_id = platform
