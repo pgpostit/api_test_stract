@@ -125,19 +125,6 @@ Exemplo:
 ```sh
 GET http://127.0.0.1:5000/meta_ads
 ```
-Resposta:
-```json
-[
-    {
-        "ad_name": "Anúncio 1",
-        "clicks": 5000,
-        "spend": 2500.0,
-        "cpc": 0.5,
-        "Platform": "meta_ads",
-        "Account": "Empresa X"
-    }
-]
-```
 
 ---
 
