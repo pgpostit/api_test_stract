@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, url_for
 from api.services import StractAPIService
 from api.insights_processor import InsightsProcessor
 from api.utils import generate_csv, summarize_data, normalize_data
@@ -12,9 +12,17 @@ def register_routes(app: Flask):
     @app.route("/", methods=["GET"])
     def home():
         return jsonify({
-            "name": "Paulo S. Garcia",
-            "email": "pgarcia2022@gmail.com",
-            "linkedin": "https://linkedin.com/in/paulogarcia01"
+            "developer": {
+                "name": "Paulo S. Garcia",
+                "email": "pgarcia2022@gmail.com",
+                "linkedin": "https://linkedin.com/in/paulogarcia01"
+            },
+            "endpoints": {
+                "general_data": url_for("get_general_data", _external=True),
+                "general_summary": url_for("get_general_summary", _external=True),
+                "platform_data": url_for("get_platform_data", platform="<platform>", _external=True),
+                "platform_summary": url_for("get_platform_summary", platform="<platform>", _external=True),
+            }
         })
 
     @app.route("/<platform>", methods=["GET"])
